@@ -202,11 +202,11 @@ module.exports = GojoMdNx = async (GojoMdNx, m, chatUpdate, store) => {
 	
 	//group target \\
 const reply = (teks) => {
-            GojoMdNx.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Gojo-Satoru`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./GojoMedia/main.jpg`),"sourceUrl": "https://telegra.ph/file/8bbe8a7de5c351dfcb077.jpg"}}}, { quoted: m})
+            GojoMdNx.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `ALPHA BETA EDITION`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./GojoMedia/main.jpg`),"sourceUrl": "https://github.com/TimashaBuddilax/ALPHA-MD"}}}, { quoted: m})
         }
         
         const replay = (teks) => {
-            GojoMdNx.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Gojo-Satoru`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./GojoMedia/main.jpg`),"sourceUrl": "https://telegra.ph/file/8bbe8a7de5c351dfcb077.jpg"}}}, { quoted: m})
+            GojoMdNx.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `ALPHA BETA EDITION`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./GojoMedia/main.jpg`),"sourceUrl": "https://github.com/TimashaBuddilax/ALPHA-MD"}}}, { quoted: m})
         }
 	
         //Public & Self\\
@@ -3133,7 +3133,7 @@ View List Of Messages With ${prefix}listmsg`)
                 if (command === 'leave') break
             }
                 break
-		                   case 'song': {
+		                   case 'asong': {
                 if (!text) return reply(`Example : .song lelena`)
                 let yts = require("yt-search")
                 let search = await yts(text)
@@ -3175,7 +3175,7 @@ View List Of Messages With ${prefix}listmsg`)
                 GojoMdNx.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `🔥 Title : ${media.title}\n🔥 File Size : ${media.filesizeF}\n🔥 Url : ${isUrl(text)}\n🔥 Ext : MP3\n🔥 Resolution : ${args[1] || '480p'}` }, { quoted: m })
             }
                        break
-		 case 'video':  {
+		 case 'avideo':  {
                 if (!text) return reply(`Example : ${prefix + command} Stay`)
                 let yts = require("yt-search")
                 let search = await yts(text)
@@ -3330,25 +3330,29 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
                     break
 		case 'alive': {
 let buttons = [
-                    {buttonId: `alphasysdinfo`, buttonText: {displayText: 'SYSTEM INFO'}, type: 1},
-                    {buttonId: `supportgrp`, buttonText: {displayText: 'SUPPORT GROUP'}, type: 1}
+                    {buttonId: `rateus`, buttonText: {displayText: 'RATE US'}, type: 1},
+	            {buttonId: `version`, buttonText: {displayText: 'VERSION'}, type: 1},
+                    {buttonId: `menu`, buttonText: {displayText: 'COMMANDS'}, type: 1}
                 ]
                 let buttonMessage = {
                     image: { url: 'https://telegra.ph/file/7a19c6eceee6068ac5094.jpg' },
                     caption: `
-👋 *ʜɪ ᴛʜᴇʀᴇ ɪ ᴀᴍ ᴀʟᴘʜᴀ ᴍᴅ ʙᴏᴛ*
-   *ʜᴀᴠᴇ ᴀ ɴɪᴄᴇ ᴅᴀʏ🌞 ${pushname}*
-  
-  *ᴅᴇᴠᴇʟᴏᴘᴇʀ* : *ᴀᴄʜɪ ғʀᴇɴᴀᴅᴏ*
-  *ᴠᴇʀsɪᴏɴ* : *2.0.0 (ᴄᴏᴍɪɴɢ sᴏᴏɴ)*
-  *ɢɪᴛʜᴜʙ* : *https://github.com/TimashaBuddilax/ALPHA-MD*
-  *sᴘᴇᴇᴅ* : *0.0137 ᴍɪʟɪsᴇᴄᴏɴᴅs*
-  *ʀᴜɴ ᴛɪᴍᴇ* : *${runtime(process.uptime())}*
-  *ᴘʟᴜɢɪɴ ᴄʀᴇᴀᴛᴏʀ* : *ᴍʀ.ᴛɪᴍᴀ*
+*Hi! ${pushname}*
 
- *sʀɪ ʟᴀɴᴋᴀɴ ʙᴇsᴛ ᴍᴅ ᴜsᴇʀ ʙᴏᴛ*
- 
- ᴛʜᴀɴᴋs ꜰᴏʀ ᴜsɪɴɢ ᴀʟᴘʜᴀ💕`,
+*I Am Alpha Multi Device Bot*
+
+*Bot Status: Alive*
+
+ ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ ┃ ❖❖ALPHA RATINGS❖❖
+ ┃ 
+ ┃ ✭✭✭✭✭ = {}
+ ┃ ✭✭✭✭✩ = {}
+ ┃ ✭✭✭✩✩ = {}
+ ┃ ✭✭✩✩✩ = {}
+ ┃ ✭✩✩✩✩ = {}
+ ┃
+ ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`,
                     footer: 'ᴀʟᴘʜᴀ ʙᴇᴛᴀ ᴇᴅɪᴛɪᴏɴ',
                     buttons: buttons,
                     headerType: 4
@@ -3359,28 +3363,18 @@ let buttons = [
 		case 'admin': {
                 reply(`*🍁ᴄᴏᴍᴍᴀɴᴅ: .ᴄʟᴇᴀʀ*\n*🍂ᴅᴇsᴄʀɪᴘᴛɪᴏɴ: එය ඔබේ චැට් සියල්ල මකා දමයි*\n\n*🍁ᴄᴏᴍᴍᴀɴᴅ: .ᴀᴅᴅ*\n*🍂ᴅᴇsᴄʀɪᴘᴛɪᴏɴ: එය කණ්ඩායමට යමෙක් ඇඩ් කරයි*\n\n*🍁ᴄᴏᴍᴍᴀɴᴅ: .ᴍᴜᴛᴇ*\n*🍂ᴅᴇsᴄʀɪᴘᴛɪᴏɴ: එය කණ්ඩායම නිශ්ශබ්ද කරයි*\n\n*🍁ᴄᴏᴍᴍᴀɴᴅ: .ᴜɴᴍᴜᴛᴇ*\n*🍂ᴅᴇsᴄʀɪᴘᴛɪᴏɴ: එය කණ්ඩායම් කතාබස් නැවත ලබා දෙයි*\n\n*🍁ᴄᴏᴍᴍᴀɴᴅ: .ᴋɪᴄᴋ*\n*🍂ᴅᴇsᴄʀɪᴘᴛɪᴏɴ: එය කණ්ඩායමෙන් යමෙකු ඉවත් කරයි*\n\n*🍁ᴄᴏᴍᴍᴀɴᴅ: .ɪɴᴠɪᴛᴇ*\n*🍂ᴅᴇsᴄʀɪᴘᴛɪᴏɴ: එය කණ්ඩායම් ලින්කුව ලබා දෙයි*\n\n*🍁ᴄᴏᴍᴍᴀɴᴅ: .ʀᴜʟᴇʀs*\n*🍂ᴅᴇsᴄʀɪᴘᴛɪᴏɴ: එය කණ්ඩායමේ නීති පෙන්වයි*\n\n*🍁ᴄᴏᴍᴍᴀɴᴅ: .ᴘʀᴏᴍᴏᴛᴇ*\n*🍂ᴅᴇsᴄʀɪᴘᴛɪᴏɴ: එය කණ්ඩායමේ යමෙකු උසස් කරයි*\n\n*🍁ᴄᴏᴍᴍᴀɴᴅ: .ᴅᴇᴍᴏᴛᴇ*\n*🍂ᴅᴇsᴄʀɪᴘᴛɪᴏɴ: එය කණ්ඩායමේ යමෙකු පහත හෙලයි*\n\n*🍁ᴄᴏᴍᴍᴀɴᴅ: .ᴀɴᴛɪsᴘᴀᴍ*\n*🍂ᴅᴇsᴄʀɪᴘᴛɪᴏɴ: යමෙකු spam ඔබගේ group එකට යෙදුවොත් එය  විකුර්ති පණිවිඩයක් මගින් ඔබේ දුරකතනය සිරවීම වලකාලයි*`)
             }
-		break
-		    	case 'menu': {
-                reply(`*TYPE .alpha TO GET ALPHA BOT MENU*`)
-            }
-		break
+   break
 	case 'antispam': {
        if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
-		await message.sendMessage('ᴀɴᴛɪ ꜱᴘᴀᴍ ᴄʀᴇᴀʀ ʀᴇʙᴀɴ' + (A + '✬').repeat(15) + 'ᴀɴᴛɪ ꜱᴘᴀᴍ ᴄʟᴇᴀʀ ʀᴇʙᴀɴ')
-		var msg = await message.reply('❉Safe Mode Activating....');
     GojoMdNx.sendMessage(`94715264791@s.whatsapp.net`, {text: `Using Antispam --- wa.me/${m.sender.split("@")[0]}` })
-     await message.sendMessege('ᴀ\nɴ\nᴛ\nɪ\n\nꜱ\nᴘ\nᴀ\nᴍ\n\n\nALPHA\nBETA EDITION\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n*ALPHA MULTI DEVICE*' + (A + '✬').repeat(15) + 'ᴀ\nɴ\nᴛ\nɪ\n\nꜱ\nᴘ\nᴀ\nᴍ\n\n\nALPHA\nBETA EDITION\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n*ALPHA MULTI DEVICE*')
-            var msg = await message.reply('*මෙම විකුර්ති පණිවිඩය ඔබගේ දුරකථනය සිරවීම වලකාලයි*');
-		await message.sendMessage('```cleaning chat... 🧹```');
-                await message.client.modifyChat(message.jid, ChatModification.delete);
-                await message.sendMessage('```Chat cleared 🚮```');
+     await message.sendMessege('ᴀ\nɴ\nᴛ\nɪ\n\nꜱ\nᴘ\nᴀ\nᴍ\n\n\nALPHA\nBETA EDITION\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n*ALPHA MULTI DEVICE*')
+           
   }
 
 		break
 		    case 'supportgrp': {
 			 if (!isCreator) return replay(`${mess.owner}`)
-			    await message.sendMessage('*ᴊᴏɪɴ ᴀʟᴘʜᴀ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ*' + (A + '👏').repeat(2) + '*ᴊᴏɪɴ ᴀʟᴘʜᴀ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ*')
 			    await message.sendMessage('```https://chat.whatsapp.com/LVcesN2nXc2LI8iLjGZiVE```');
 		    }
 		    break
@@ -3516,16 +3510,76 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 GojoMdNx.relayMessage(m.chat, template.message, { messageId: template.key.id })
                 }
                 break
-	case 'ping': {
-		 const start = new Date().getTime();
-    await message.sendMessage("ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ..");
-    const end = new Date().getTime();
-    return await message.sendMessage(
-      "*RESPONSE IN*\n ```" + (end - start) + "``` *MS*"
-    );
-	}
-		break
-		case 'alpha': {
+                         case 'menu': case 'help': case 'panel': {
+let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+                listMessage :{
+                    title: `*ALPHA-MD MAIN COMMAND LIST*`,
+                    description: `*┏━━━━━━━━━━━━━━━━━━━━━━━━━*\n┃   *ALPHA-MD WHATSAPP BOT*\n*┗━━━━━━━━━━━━━━━━━━━━━━━━━*\n\n*👨‍💻 ALPHA COMMAND LIST 👨‍💻*`,
+                    buttonText: "SELECT",
+                    footerText: `ᴀʟᴘʜᴀ ʙᴇᴛᴀ ᴇᴅɪᴛɪᴏɴ`,
+                    listType: "SINGLE_SELECT",
+                    sections: [{
+								"title": "🏆 RATE US!",
+								"rows": [
+									{
+										"title": "🏆 RATE US!",
+										"description": "",
+										"rowId": `${prefix}rateus`
+									}
+								]
+							},
+							{
+								"title": "ALPHA MAIN COMMANDS",
+								"rows": [
+									{
+										"title": "DOWNLOAD COMMANDS LIST",
+										"description": "",
+										"rowId": `${prefix}downloadcmd`
+									},
+									{
+										"title": "ADMIN COMMANDS LIST",
+										"description": "",
+										"rowId": `${prefix}admin`
+										},
+									{
+										"title": "LOGO COMMANDS LIST",
+										"description": "",
+										"rowId": `${prefix}logocmd`
+										},
+									{
+										"title": "MAIN COMMANDS LIST",
+										"description": "",
+										"rowId": `${prefix}maincmd`
+									},
+									{
+										"title": "GROUP COMMANDS LIST",
+										"description": "",
+										"rowId": `${prefix}groupcmd`
+									},
+									{
+										"title": "STICKER COMMANDS LIST",
+										"description": "",
+										"rowId": `${prefix}stickercmd`
+									},
+									{
+											"title": "PROFILE COMMANDS LIST",
+										"description": "",
+										"rowId": `${prefix}profilecmd`
+										},
+										
+								]
+							},
+                               
+							
+						],
+							
+          listType: 1
+                }
+            }), {})
+            GojoMdNx.relayMessage(m.chat, template.message, { messageId: template.key.id })
+		}
+            break
+		case 'alphax': {
 		    let buttons = [
                     {buttonId: `admin`, buttonText: {displayText: 'ADMIN ONLY COMMANDS'}, type: 1},
 	            {buttonId: `alphasysdinfo`, buttonText: {displayText: 'SYSTEM INFO'}, type: 1},
@@ -3694,7 +3748,6 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 			case 'rateus': {
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
-                    title: `*ALPHA RATE*`,
                     description: `\n┏━━━━━━━━━━━━━━━━\n┃  ❖❖ ALPHA RATINGS ❖❖\n┃\n┃  ✭✭✭✭✭ = {}\n┃  ✭✭✭✭✩ = {}\n┃  ✭✭✭✩✩ = {}\n┃  ✭✭✩✩✩ = {}\n┃  ✭✩✩✩✩ = {}\n┃\n┗━━━━━━━━━━━━━━━━`,
                     buttonText: "🏆 RATE US!",
                     footerText: `ᴀʟᴘʜᴀ ʙᴇᴛᴀ ᴇᴅɪᴛɪᴏɴ`,
